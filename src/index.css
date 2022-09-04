@@ -1,0 +1,13 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 24px;
+}

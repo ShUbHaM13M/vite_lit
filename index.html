@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/user-card.ts"></script>
+    <script type="module" src="/src/components/popup.ts"></script>
+    <script type="module" defer src="/script.ts"></script>
+  </head>
+  <body>
+    <div class="card-container"></div>
+    <custom-popup
+      id="custom-popup"
+      props='{
+        "title": "Warning !!", 
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatem fugiat modi quos a maxime sapiente ducimus at illo aliquid sit quasi",
+        "isBackdropBlurred": true,
+        "isShown": false
+      }'
+      variant="warning"
+    >
+    </custom-popup>
+    <button id="showPopupBtn">Show Popup</button>
+  </body>
+</html>
